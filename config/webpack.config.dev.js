@@ -279,7 +279,8 @@ module.exports = {
             use: getStyleLoaders({
               importLoaders: 1,
               modules: true,
-              getLocalIdent: getCSSModuleLocalIdent,
+              localIdentName: '[path][name]__[local]--[hash:base64:5]'
+             // getLocalIdent: getCSSModuleLocalIdent,
             }),
           },
           // Adds support for CSS Modules (https://github.com/css-modules/css-modules)

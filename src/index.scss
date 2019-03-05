@@ -1,10 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
+@import "./styles/color.scss";
 html {
     font-size: 12px;
     font-family: -apple-system, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Arial, sans-serif;
@@ -18,16 +12,49 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-ul,
-li,
+body,
 div,
-article,
-nav,
+span,
 header,
-section {
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
     margin: 0;
     padding: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
 }
 
+a {
+    color: unset;
+    text-decoration-line: none;
+}
 
-
+a:hover{
+    color: $basic-color;
+}
